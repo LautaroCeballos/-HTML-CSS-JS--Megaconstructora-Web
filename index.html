@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PYM861QHW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4PYM861QHW');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="initial-scale=1, width=device-width"> -->
+    <title>Mega Constructora</title>
+
+    <script src="./assets/js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="assets/css/hover-distorsion.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+</head>
+
+<body class="loading">
+<!-- <body class=""> -->
+    <header>
+        <div id="logo">
+            <a href="#home" onclick="headerGoTo(this); return false">
+                <img src="assets/img/Logo.png" alt="Mega-Constructora">
+            </a>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#home" class="active" onclick="headerGoTo(this); return false"><i
+                            class="fa fa-home menu--icon"></i>Home</a></li>
+                <li><a href="#servicios" onclick="headerGoTo(this); return false"><i
+                            class="fa fa-book menu--icon"></i>Servicios</a></li>
+                <li><a href="#compromiso" onclick="headerGoTo(this); return false"><i
+                            class="fa fa-medal menu--icon"></i>Compromiso</a></li>
+                <!-- <li><a href="#proyectos" onclick="headerGoTo(this); return false"><i class="fa fa-building menu--icon"></i>Proyectos</a></li> -->
+                <li><a href="#miembros" onclick="headerGoTo(this); return false"><i
+                            class="fa fa-user-friends menu--icon"></i>Miembros</a></li>
+                <!-- <li><a href="#" onclick="headerGoTo(this); return false"><i class="fa fa-newspaper menu--icon"></i>News</a></li> -->
+                <li><a href="#contacto" onclick="headerGoTo(this); return false"><i
+                            class="fa fa-address-book menu--icon"></i>Contacto</a></li>
+                <!-- <li><a href="#" onclick="headerGoTo(this); return false"><i class="fa fa-sign-in-alt menu--icon"></i>Login</a></li> -->
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburguesa"></div>
+        </div>
+
+    </header>
+
+    <section id="home">
+        <div class="grid">
+            <div class="grid__item grid__item--bg">
+                <div class="grid__item-img" data-displacement="./assets/img/home/desplazamiento/10.jpg"
+                    data-intensity="-0.65" data-speedIn="1.2" data-speedOut="1.2">
+                    <img src="assets/img/home/Img2.jpg" alt="Familia" />
+                    <img src="assets/img/home/Img12.jpg" alt="MegaConstructora" />
+                </div>
+                <div class="grid__item-content">
+                    <span class="grid__item-meta">
+                        <span class="item-meta-somos">Somos </span><span class="item-meta-mega">MEGA</span>
+                    </span>
+
+                    <h3 class="grid__item-subtitle">
+                        <span>Viví Mejor</span>
+                        <span>Concretá tu Proyecto</span>
+                        <span>Invertí Inteligentemente</span>
+                        <a class="grid__item-link" href="#servicios" onclick="headerGoTo(this); return false">Descubrí MEGA</a>
+                    </h3>
+
+                    <h3 class="grid__family-subtitle">
+                        <span>Somos Garantia <br>para <span class="txt-naranja">tu familia</span></span>
+                    </h3>
+
+                </div>
+            </div>
+            <div class="grid__item grid__item--bg">
+                <div class="grid__item-img" data-displacement="./assets/img/home/desplazamiento/10.jpg"
+                    data-intensity="-0.65" data-speedIn="1.2" data-speedOut="1.2">
+                    <img src="assets/img/home/Img3.jpg" alt="Centro Civico" />
+                    <img src="assets/img/home/Img11.jpg" alt="Emilia2" />
+                </div>
+                <div class="grid__item-content">
+                    <h2 class="grid__item-meta meta-hover">
+                        <span class="txt-naranja">¡Nuestro Orgullo!</span><br>
+                        <span>Centro Civico Córdoba</span>
+                    </h2>    
+                    <h3 class="grid__item-subtitle subtitle-hover">
+                        <!-- <span> -->
+                            <img src="./assets/img/home/Emilia2Logo.png" alt="Logo Emilia 2">
+                        <!-- </span> -->
+                        <span class="txt-naranja">¡Ya en Preventa!</span>
+                        <span>Conoce nuestro nuevo proyecto. </span>
+                        <a class="grid__item-link" href="#contacto" onclick="headerGoTo(this); return false">Asesorate YA!</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside id="sidebar-redes">
+        <a href="https://wa.me/5493513565782" target="_blank"><i class="fab fa-whatsapp-square wp"></i></a>
+        <a href="https://www.instagram.com/megaconstructora/" target="_blank"><i
+                class="fab fa-instagram-square ig"></i></a>
+        <a href="https://www.facebook.com/megaconstructoraarg" target="_blank"><i
+                class="fab fa-facebook-square fb"></i></a>
+    </aside>
+
+    <section id="servicios">
+        <article class="serv-descripcion">
+            <div class="txt-mega-serv load-hidden">
+                <h2>SOBRE <span class="txt-naranja">MEGA</span></h2>
+                <p>
+                    Somos una empresa constructora desarrollista, con experiencia en el ámbito público y privado, 
+                    dedicada al asesoramiento y gestión integral de pequeñas, medianas y grandes obras.
+                </p>
+            </div>
+            <div class="img-mega-serv load-hidden">
+                <img src="./assets/img/servicios/mega.png" alt="Planos Mega">
+            </div>
+        </article>
+
+        <article class="serv-buttons">
+            <input type="radio" name="s-slides" id="s-radio1" checked>
+            <input type="radio" name="s-slides" id="s-radio2">
+            <input type="radio" name="s-slides" id="s-radio3">
+            <input type="radio" name="s-slides" id="s-radio4">
+
+            <div class="s-navegacion">
+                <label for="s-radio1" id="s-radioSelect1" class="serv-label load-hidden">
+                    <img src="./assets/img/servicios/doc-tec.png" alt="Documentacion Tecnica">
+                </label>
+                <label for="s-radio2" id="s-radioSelect2" class="serv-label load-hidden">
+                    <img src="./assets/img/servicios/mult-proy.png" alt="Todo tipo de Proyectos">
+                </label>
+                <label for="s-radio3" id="s-radioSelect3" class="serv-label load-hidden">
+                    <img src="./assets/img/servicios/Llave en mano.png" alt="Llave en mano">
+                </label>
+                <label for="s-radio4" id="s-radioSelect4" class="serv-label load-hidden">
+                    <img src="./assets/img/servicios/hormigon.png" alt="Estructuras de Hormigon">
+                </label>
+            </div>
+
+            <ul class="s-slides">
+                <li>
+                    <div class="descr-serv">
+                        <h3>Documentacion Tecnica</h3>
+                        <p>
+                            Nuestra tarea es realizar toda la documentacion necesaria que
+                            define la obra y asi determinar las condiciones de ejecucion.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="descr-serv">
+                        <h3>Proyectos de pequeña, mediana y gran embargadura</h3>
+                        <p>
+                            Nos especializamos en desarrollos tanto de mediana como de gran embargadura,
+                            interviniendo en todos los procesos.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="descr-serv">
+                        <h3>Llave en Mano</h3>
+                        <p>
+                            Consiste en la firma de un contrato por un precio único, el cual
+                            acompañado de la documentacion de obra y de un pliege de especificaciones
+                            técnicas, brinda a comitente la certeza del tiempo de ejecucion de obra,
+                            costo y calidad final.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="descr-serv">
+                        <h3>Estructuras de Hormigon</h3>
+                        <p>
+                            Realizamos estructuras de hormigón armado, de mediana y gran envergadura.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+        </article>
+
+    </section>
+
+    <section id="compromiso">
+
+        <article class="compr-item load-hidden">
+            <img class="img-shadow" src="./assets/img/compromiso/Equipo de Profesionales.png"
+                alt="Equipo de Profesionales">
+            <div>
+                <h3>Equipo de Profesionales</h3>
+                <p>
+                    Cada una de las áreas que nos conforman esta compuesta por un calificado plantel profesional
+                </p>
+            </div>
+
+        </article>
+        <article class="compr-item load-hidden">
+            <img class="img-shadow" src="./assets/img/compromiso/Garantia de Calidad.png" alt="Garantia de Calidad">
+            <div>
+                <h3>Garantia de Calidad</h3>
+                <p>
+                    Es una de nuestra premisas mas importantes, y por ella nos destacamos. Estamos en constante
+                    búsqueda e investigacion de nuevas tecnologias y materiales.
+                </p>
+            </div>
+
+        </article>
+        <article class="compr-item .load-hidden">
+            <img class="img-shadow" src="./assets/img/compromiso/Altos estandares de calidad.png" alt="Seguridad">
+            <div>
+                <h3>Impecable Seguridad</h3>
+                <p>
+                    Construimos bajo las mas estrictas normas de higiene y seguridad, con el objetivo de evitar
+                    riesgos, privilegiamos el trabajo seguro de todo nuestro personal.
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- <section id="proyectos">
+        <aside class="proyectos-sidebar">
+            <form action="" class="sidebar-buscar">
+                <h3>Buscar</h3>
+                <hr>
+                <input type="search" name="buscar-proyecto" placeholder="Buscar">
+                <i class="fas fa-search"></i>
+            </form>
+            <h3>Filtrar</h3>
+            <hr>
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Estilo</h2>
+                    <p>
+                        <button>Todos</button>
+                        <button>Edificios</button>
+                        <button>Condominios</button>
+                        <button>Barrio</button>
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Dormitorios</h2>
+                    <p>
+                        <button>Todos</button>
+                        <button>1 Dormitorio</button>
+                        <button>2 Dormitorio</button>
+                        <button>3 Dormitorio</button>
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Estado</h2>
+                    <p>
+                        <button>Todos</button>
+                        <button>Terminados</button>
+                        <button>En Construccion</button>
+                        <button>En Pozo</button>
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Ubicacion</h2>
+                    <p>
+                        <button>Todos</button>
+                        <button>San Vicente</button>
+                        <button>Nueva Cordoba</button>
+                        <button>Alta Cordoba</button>
+                    </p>
+                </li>
+            </ul>
+        </aside>
+        <div id="proyecto-list">
+            <article id="proyecto-template" class="proy-item">
+                <div class="img-proy">
+                    <button class="btn-list-proy btn-new-proy">Nuevo</button>
+                    <img src="./assets/img/proyecto/imagen-proyecto.png" alt="Edificio Emilia" />
+                    <button class="btn-list-proy btn-mas-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>Solicitar Info</span>
+                    </button>
+                </div>
+
+                <div class="descr-proy">
+                    <img src="./assets/img/proyecto/logo-proyecto.png" alt="Logo Emilia" class="logo-proy" />
+                    <div class="caract-proy">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Corrientes 1761</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>B° San Vicente</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-calendar-alt"></i>
+                            <p>Posesion 01/2021</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </section> -->
+
+    <section id="miembros">
+        <section class="inversores">
+            <input type="radio" name="m-slides" id="m-radio1" checked>
+            <input type="radio" name="m-slides" id="m-radio2">
+            <!-- <input type="radio" name="m-slides" id="m-radio3"> -->
+            <ul class="m-slides">
+                <li>
+                    <article class="inversor">
+                        <img class="inversor-img" src="./assets/img/miembros/JuanI.png" alt="Juan I.">
+                        <p>
+                            <span class="txt-naranja">Pablo y su papá </span> me ayudaron con mis inversiones,
+                            trabajamos juntos desde hace mas de 4 años, son responsables, muy capaces y sobre todo
+                            buenas personas<br>
+                            <span class="txt-verde">Juan I.</span>
+                        </p>
+                        <img class="inversor-comilla" src="./assets/img/miembros/Comillas.png" alt="comillas">
+                    </article>
+                </li>
+                <li>
+                    <article class="inversor">
+                        <img class="inversor-img" src="./assets/img/miembros/CarlaM.png" alt="Carla M.">
+                        <p>
+                            Me complace recomendar a <span class="txt-naranja">MEGA</span>, ya que,
+                            estoy segura que al contratar sus servicios estarán obteniendo satisfactoriamente los
+                            beneficios esperados como lo hicieron conmigo. <br>
+                            <span class="txt-verde">Carla M.</span>
+                        </p>
+                        <img class="inversor-comilla" src="./assets/img/miembros/Comillas.png" alt="comillas">
+                    </article>
+                </li>
+                <!-- <li>
+                    <article class="inversor">
+                        <img class="inversor-img" src="./assets/img/miembros/MarcosR.png" alt="Marcos R.">
+                        <p>
+                            <span class="txt-naranja">MEGA </span> propuso una alternativa de inversion a mi medida,
+                            atractiva
+                            y confiable. <br>
+                            <span class="txt-verde">Marcos R.</span>
+                        </p>
+                        <img class="inversor-comilla" src="./assets/img/miembros/Comillas.png" alt="comillas">
+                    </article>
+                </li> -->
+            </ul>
+            <div class="m-navegacion">
+                <label for="m-radio1" id="m-radioSelect1"></label>
+                <label for="m-radio2" id="m-radioSelect2"></label>
+                <!-- <label for="m-radio3" id="m-radioSelect3"></label> -->
+            </div>
+        </section>
+
+        <div class="call-to-action">
+            <p>Forma parte del equipo <br> de <span class="txt-verde">&nbsp;inversores&nbsp;</span> en <span
+                    class="txt-naranja">&nbsp;Mega</span></p>
+            <a class="btn-cta" href="#contacto" onclick="headerGoTo(this); return false">Unete ahora</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 class="txt-naranja">
+            Contactanos
+            <hr class="txt-naranja" />
+        </h2>
+
+        <section class="form-contacto">
+
+            <div class="buttons-contacto">
+                <div id="c-radioSelect1" class="form-active">Consulta</div>
+                <div id="c-radioSelect2"></div>
+                <div id="c-radioSelect3"></div>
+            </div>
+
+            <form action="#" id="contact-form" method="POST">
+                <input type="hidden" name="contact_number" />
+                <input type="text" name="from_name" placeholder="Ingrese su Nombre" required />
+                <input type="tel" name="phone" placeholder="Ingrese su Telefono" required />
+                <input type="email" name="reply_to" placeholder="Ingrese su Email" required />
+                <textarea name="message" cols="30" rows="5" placeholder="Ingrese su consulta"
+                    required></textarea>
+                <input type="submit" class="btn-cta" value="Enviar" />
+            </form>
+        </section>
+
+        <div class="info-contacto">
+            <div>
+                <i class="fab fa-whatsapp"></i>
+                <p>
+                    +54 9 351 753-1702 <br />
+                    +54 9 351 356-5782
+                </p>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <p>
+                    ventas@megaconstructora.com <br />
+                    administracion@megaconstructora.com
+                </p>
+            </div>
+            <div>
+                <i class="far fa-clock"></i>
+                <p>Lunes a Viernes 09 - 18hs</p>
+            </div>
+            <div>
+                <i class="far fa-map"></i>
+                <p>
+                    Corrientes 1761 - B° San Vicente - Cordoba
+                </p>
+            </div>
+
+            <div id="map" class="google-maps">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="help">
+            <span class="footer-title">¿Como podemos ayudarte?</span><br>
+            <div class="help-options">
+                <div>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="#contacto" onclick="helpMe(this); return false">Quiero Invertir</a>
+                </div>
+                <div>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="#contacto" onclick="helpMe(this); return false">Quiero Proveer</a>
+                </div>
+                <div>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="#contacto" onclick="helpMe(this); return false">Quiero Vivir</a>
+                </div>
+                <div>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="#contacto" onclick="helpMe(this); return false">Quiero Trabajar</a>
+                </div>
+                <div>
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="#contacto" onclick="helpMe(this); return false">Quiero brindar un Servicio</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="newslestter">
+            <span class="footer-title">
+                <i class="fas fa-info-circle"></i> Newslestter
+            </span>
+            <form class="newslestter-form" id="newslestter-form" action="#" method="POST">
+                <input type="hidden" name="contact_number" />
+                <input type="email" placeholder="tu-email@ejemplo.com" name="from_email" required />
+                <input type="submit" value="Suscribirse">
+            </form>
+            <p>Suscribete a nuestras noticias mensuales y mantente informado.</p>
+        </section>
+        <section class="legal">
+            <p>Informacion Fiscal</p>
+            <img src="https://borealtech.com/wp-content/uploads/2018/10/codigo-qr-1024x1024.jpg"
+                alt="Informacion Fiscal">
+            <a href="#">Politicas de Privacidad</a>
+        </section>
+
+        <section class="copyright">
+            <p>COPYRIGHT &copy; 2020 - MEGA CONSTRUCTORA - Todos los derechos reservados</p>
+            <div class="redes">
+                <a href="https://wa.me/5493513565782" target="_blank"><i class="fab fa-whatsapp-square wp"></i></a>
+                <a href="https://www.instagram.com/megaconstructora/" target="_blank"><i
+                        class="fab fa-instagram-square ig"></i></a>
+                <a href="https://www.facebook.com/megaconstructoraarg" target="_blank"><i
+                        class="fab fa-facebook-square fb"></i></a>
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/95272cc05a.js" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/95272cc05a.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- <script src="./assets/js/email.min.js"></script> -->
+    <script type="text/javascript">(function () { emailjs.init("user_MJupDWG4Bxs2bM75BA7BF"); })();</script>
+
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <!-- <script src="./assets/js/TweenMax.min.js"></script> -->
+    <script src="assets/js/hover.js"></script>
+    <script>
+        imagesLoaded( document.querySelectorAll('img'), () => {
+            document.body.classList.remove('loading');
+        });
+
+        Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
+            const imgs = Array.from(el.querySelectorAll('img'));
+            new hoverEffect({
+                parent: el,
+                intensity: el.dataset.intensity || undefined,
+                speedIn: el.dataset.speedin || undefined,
+                speedOut: el.dataset.speedout || undefined,
+                easing: el.dataset.easing || undefined,
+                hover: el.dataset.hover || undefined,
+                image1: imgs[0].getAttribute('src'),
+                image2: imgs[1].getAttribute('src'),
+                displacementImage: el.dataset.displacement
+            });
+        });
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4jhQXWJ1FobS9D4cLUveBrTeJjiMl7Uk&callback=initMap"></script>
+    <script src="./assets/js/navbar-responsive.js"></script>
+</body>
+
+</html>
